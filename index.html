@@ -1,1 +1,3178 @@
-{"id":"/index.html","path":"/index.html","sha":"4a456db15ed7d6fa7722ea1b398f6e939a513da2","mime_type":"text/html","size":122829,"site_id":"4dc61a5a-b5e9-4ba8-8270-5822c0d14788","deploy_id":"69bc8ef088aa6f00e9839c77"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>SCVLeads | AI-Powered Lead Generation | Southern California Verified Leads</title>
+    <meta name="description" content="AI-powered lead generation for Southern California service businesses. You own the account. You pay Meta directly. Transparent pricing, real results. 25+ years local expertise.">
+    <meta name="keywords" content="lead generation, AI lead generation, Santa Clarita leads, HVAC leads, plumbing leads, roofing leads, dental leads, real estate leads, mortgage leads, Southern California marketing">
+    <meta name="author" content="Connor MacIvor">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scvleads.com/">
+    <meta property="og:title" content="SCVLeads | AI-Powered Lead Generation That You Actually Own">
+    <meta property="og:description" content="You own the account. You pay Meta directly. I handle everything else. 25+ years of Santa Clarita business expertise meets cutting-edge AI.">
+    <meta property="og:image" content="https://storage.googleapis.com/msgsndr/QkqUOCzLKFfXMsxZTXOY/media/69519ee573a5e02c6b79a4a5.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://scvleads.com/">
+    <meta name="twitter:title" content="SCVLeads | AI-Powered Lead Generation">
+    <meta name="twitter:description" content="You own the account. You pay Meta directly. Transparent lead generation for Southern California businesses.">
+    <meta name="twitter:image" content="https://storage.googleapis.com/msgsndr/QkqUOCzLKFfXMsxZTXOY/media/69519ee573a5e02c6b79a4a5.png">
+    <meta name="twitter:creator" content="@ConnorWithHonor">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://scvleads.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/697e9404f7a8778ce3d0c151.svg">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           CSS VARIABLES & RESET
+        ============================================ */
+        :root {
+            --primary: #37ca37;
+            --primary-dark: #2ba52b;
+            --secondary: #188bf6;
+            --secondary-dark: #0066cc;
+            --accent: #155eef;
+            --white: #ffffff;
+            --gray-100: #f7fafc;
+            --gray-200: #edf2f7;
+            --gray-300: #e2e8f0;
+            --gray-400: #cbd5e0;
+            --gray-500: #a0aec0;
+            --gray-600: #718096;
+            --gray-700: #4a5568;
+            --gray-800: #2d3748;
+            --gray-900: #1a202c;
+            --black: #000000;
+            --bg-dark: #050508;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border-subtle: rgba(255, 255, 255, 0.1);
+            --gradient-blue: linear-gradient(135deg, #178af6 0%, #0066cc 100%);
+            --gradient-green: linear-gradient(135deg, #37ca37 0%, #2ba52b 100%);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            --shadow-glow: 0 0 40px rgba(24, 139, 246, 0.3);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background: var(--bg-dark);
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background: var(--bg-dark);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============================================
+           TRON GRID BACKGROUND
+        ============================================ */
+        .tron-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .tron-grid {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background-image:
+                linear-gradient(rgba(24, 139, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(24, 139, 246, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            transform: perspective(500px) rotateX(60deg);
+            animation: gridMove 20s linear infinite;
+        }
+
+        .tron-horizon {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(24, 139, 246, 0.05), transparent);
+        }
+
+        @keyframes gridMove {
+            0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
+            100% { transform: perspective(500px) rotateX(60deg) translateY(60px); }
+        }
+
+        /* ============================================
+           LAYOUT & CONTAINERS
+        ============================================ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============================================
+           HEADER & NAVIGATION
+        ============================================ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 0;
+            background: rgba(5, 5, 8, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.3s ease;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--gray-300);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--white);
+        }
+
+        .nav-cta {
+            background: var(--gradient-green);
+            color: var(--white) !important;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(55, 202, 55, 0.3);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* ============================================
+           HERO SECTION
+        ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 140px 0 100px;
+            background: radial-gradient(ellipse at top, rgba(24, 139, 246, 0.15) 0%, transparent 60%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(55, 202, 55, 0.1);
+            border: 1px solid rgba(55, 202, 55, 0.3);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 24px;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            animation: fadeInDown 0.8s ease;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--gray-400);
+            margin-bottom: 32px;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero-value-prop {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+
+        .hero-value-prop h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary);
+        }
+
+        .hero-value-prop p {
+            color: var(--gray-400);
+            margin-bottom: 24px;
+            font-size: 15px;
+        }
+
+        .value-checks {
+            display: grid;
+            gap: 12px;
+        }
+
+        .value-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 15px;
+            color: var(--gray-200);
+        }
+
+        .value-check svg {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+            margin-top: 2px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--gradient-green);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(55, 202, 55, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(55, 202, 55, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--white);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* ============================================
+           SOCIAL PROOF / TESTIMONIAL
+        ============================================ */
+        .social-proof {
+            background: linear-gradient(180deg, transparent 0%, rgba(24, 139, 246, 0.05) 50%, transparent 100%);
+            padding: 80px 0;
+        }
+
+        .proof-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .proof-header h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .proof-header p {
+            color: var(--gray-400);
+            font-size: 16px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 48px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            font-size: 120px;
+            font-family: Georgia, serif;
+            color: rgba(24, 139, 246, 0.1);
+            line-height: 1;
+        }
+
+        .testimonial-metric {
+            font-size: 72px;
+            font-weight: 800;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+
+        .testimonial-detail {
+            color: var(--gray-400);
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-source {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray-500);
+            font-size: 14px;
+        }
+
+        .testimonial-source::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--gray-600);
+        }
+
+        /* ============================================
+           WHAT YOU GET SECTION
+        ============================================ */
+        .what-you-get {
+            padding: 120px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .section-header p {
+            color: var(--gray-400);
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(24, 139, 246, 0.3);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-blue);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--gray-400);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--gray-300);
+            margin-bottom: 10px;
+        }
+
+        .feature-list li::before {
+            content: '→';
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        /* ============================================
+           HONOR ELEVATE PLATFORM SECTION
+        ============================================ */
+        .platform-section {
+            background: linear-gradient(180deg, rgba(24, 139, 246, 0.08) 0%, transparent 100%);
+            padding: 120px 0;
+        }
+
+        .platform-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .platform-content h2 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .platform-content h2 span {
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .platform-content > p {
+            color: var(--gray-400);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .platform-features {
+            display: grid;
+            gap: 24px;
+        }
+
+        .platform-feature {
+            display: flex;
+            gap: 16px;
+        }
+
+        .platform-feature-icon {
+            width: 44px;
+            height: 44px;
+            background: rgba(24, 139, 246, 0.1);
+            border: 1px solid rgba(24, 139, 246, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+
+        .platform-feature h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .platform-feature p {
+            color: var(--gray-400);
+            font-size: 14px;
+        }
+
+        .platform-visual {
+            position: relative;
+        }
+
+        .device-mockup {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .device-mockup::before {
+            content: 'HonorElevate Dashboard';
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: var(--gradient-blue);
+            padding: 4px 16px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .mock-header {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .mock-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--gray-700);
+        }
+
+        .mock-dot:nth-child(1) { background: #ff5f57; }
+        .mock-dot:nth-child(2) { background: #ffbd2e; }
+        .mock-dot:nth-child(3) { background: #28ca41; }
+
+        .mock-content {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .mock-stat-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .mock-stat {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .mock-stat-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .mock-stat-label {
+            font-size: 11px;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mock-leads {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .mock-lead-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .mock-lead-item:last-child {
+            border-bottom: none;
+        }
+
+        .mock-lead-name {
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .mock-lead-status {
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 100px;
+            background: rgba(55, 202, 55, 0.15);
+            color: var(--primary);
+        }
+
+        .mock-lead-status.new {
+            background: rgba(24, 139, 246, 0.15);
+            color: var(--secondary);
+        }
+
+        .devices-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 24px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+        }
+
+        .devices-badge span {
+            font-size: 24px;
+        }
+
+        .devices-badge p {
+            font-size: 14px;
+            color: var(--gray-300);
+        }
+
+        .devices-badge strong {
+            color: var(--white);
+        }
+
+        /* ============================================
+           TEAM FEATURES SECTION
+        ============================================ */
+        .team-section {
+            padding: 120px 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .team-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            border-color: rgba(55, 202, 55, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .team-card-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 20px;
+            background: rgba(55, 202, 55, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .team-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .team-card p {
+            color: var(--gray-400);
+            font-size: 15px;
+        }
+
+        /* ============================================
+           PRICING SECTION
+        ============================================ */
+        .pricing-section {
+            background: linear-gradient(180deg, transparent 0%, rgba(24, 139, 246, 0.05) 50%, transparent 100%);
+            padding: 120px 0;
+        }
+
+        /* Pricing Badges */
+        .pricing-badges {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-badge {
+            background: rgba(55, 202, 55, 0.1);
+            border: 1px solid rgba(55, 202, 55, 0.25);
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* Pricing Tabs */
+        .pricing-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .pricing-tab {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            color: var(--gray-400);
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .pricing-tab:hover {
+            border-color: var(--secondary);
+            color: var(--white);
+        }
+
+        .pricing-tab.active {
+            background: var(--gradient-blue);
+            border-color: var(--secondary);
+            color: var(--white);
+        }
+
+        /* Tab Content */
+        .pricing-tab-content {
+            display: none;
+        }
+
+        .pricing-tab-content.active {
+            display: block;
+        }
+
+        .pricing-note {
+            text-align: center;
+            background: rgba(55, 202, 55, 0.1);
+            border: 1px solid rgba(55, 202, 55, 0.2);
+            border-radius: 12px;
+            padding: 16px 24px;
+            margin-bottom: 48px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pricing-note p {
+            color: var(--gray-300);
+            font-size: 15px;
+        }
+
+        .pricing-tiers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 48px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pricing-tiers-single {
+            grid-template-columns: 1fr;
+            max-width: 450px;
+        }
+
+        /* Break-even highlight */
+        .pricing-breakeven {
+            background: rgba(55, 202, 55, 0.15);
+            color: var(--primary);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        /* Pricing Extras */
+        .pricing-extras {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 48px;
+            margin-bottom: 32px;
+        }
+
+        .pricing-extra-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 28px;
+        }
+
+        .pricing-extra-card h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .pricing-extra-card p {
+            color: var(--gray-400);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+
+        .pricing-extra-card ul {
+            list-style: none;
+        }
+
+        .pricing-extra-card ul li {
+            color: var(--gray-300);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .pricing-extra-card.guarantee {
+            border-color: rgba(55, 202, 55, 0.3);
+            background: rgba(55, 202, 55, 0.05);
+        }
+
+        .pricing-extra-card.guarantee p {
+            margin-bottom: 0;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 40px 32px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--secondary);
+            background: linear-gradient(180deg, rgba(24, 139, 246, 0.1) 0%, var(--bg-card) 100%);
+        }
+
+        .pricing-card.featured::before {
+            content: 'MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-blue);
+            padding: 6px 20px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-tier-name {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gray-500);
+            margin-bottom: 12px;
+        }
+
+        .pricing-amount {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .pricing-amount span {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--gray-500);
+        }
+
+        .pricing-perfect {
+            font-size: 14px;
+            color: var(--gray-400);
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            color: var(--gray-300);
+            margin-bottom: 14px;
+        }
+
+        .pricing-features li svg {
+            width: 18px;
+            height: 18px;
+            color: var(--primary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .pricing-cta {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+
+        /* Industry Pricing Table */
+        .industry-pricing {
+            margin-top: 64px;
+        }
+
+        .industry-pricing h3 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        .pricing-table-wrapper {
+            overflow-x: auto;
+            border-radius: 16px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 18px 24px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .pricing-table th {
+            background: rgba(24, 139, 246, 0.1);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--gray-400);
+        }
+
+        .pricing-table td {
+            font-size: 15px;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .industry-name {
+            font-weight: 600;
+        }
+
+        .price-range {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .ad-spend-note {
+            margin-top: 32px;
+            padding: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .ad-spend-note p {
+            color: var(--gray-400);
+            font-size: 14px;
+        }
+
+        .ad-spend-note strong {
+            color: var(--white);
+        }
+
+        /* ============================================
+           90-DAY RUNWAY SECTION
+        ============================================ */
+        .runway-section {
+            padding: 120px 0;
+        }
+
+        .runway-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .runway-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--secondary), var(--primary));
+            transform: translateX(-50%);
+        }
+
+        .runway-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 48px;
+            position: relative;
+        }
+
+        .runway-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .runway-item:nth-child(odd) .runway-content {
+            text-align: right;
+            padding-right: 60px;
+            padding-left: 0;
+        }
+
+        .runway-item:nth-child(even) .runway-content {
+            padding-left: 60px;
+        }
+
+        .runway-content {
+            width: 50%;
+        }
+
+        .runway-marker {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--secondary);
+            border-radius: 50%;
+            border: 4px solid var(--bg-dark);
+            z-index: 1;
+        }
+
+        .runway-month {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .runway-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .runway-desc {
+            color: var(--gray-400);
+            font-size: 15px;
+        }
+
+        .runway-list {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .runway-list li {
+            color: var(--gray-400);
+            font-size: 14px;
+            margin-bottom: 6px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .runway-item:nth-child(odd) .runway-list li {
+            justify-content: flex-end;
+        }
+
+        .runway-list li::before {
+            content: '✓';
+            color: var(--primary);
+        }
+
+        .runway-item:nth-child(odd) .runway-list li::before {
+            order: 1;
+        }
+
+        /* ============================================
+           FAQ SECTION
+        ============================================ */
+        .faq-section {
+            background: linear-gradient(180deg, rgba(24, 139, 246, 0.05) 0%, transparent 100%);
+            padding: 120px 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 28px;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(24, 139, 246, 0.3);
+        }
+
+        .faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .faq-question::before {
+            content: 'Q';
+            background: var(--gradient-blue);
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            color: var(--gray-400);
+            font-size: 15px;
+            padding-left: 36px;
+        }
+
+        /* ============================================
+           HONESTY SECTION
+        ============================================ */
+        .honesty-section {
+            padding: 120px 0;
+        }
+
+        .honesty-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 48px;
+            align-items: center;
+        }
+
+        .honesty-content h2 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .honesty-content > p {
+            color: var(--gray-400);
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+
+        .honesty-list {
+            list-style: none;
+        }
+
+        .honesty-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+        }
+
+        .honesty-list li span {
+            font-size: 24px;
+        }
+
+        .honesty-list li div {
+            flex: 1;
+        }
+
+        .honesty-list li strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .honesty-list li p {
+            color: var(--gray-400);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .honesty-cta {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 48px;
+            text-align: center;
+        }
+
+        .honesty-cta h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .honesty-cta p {
+            color: var(--gray-400);
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        /* ============================================
+           ABOUT CONNOR SECTION
+        ============================================ */
+        .about-section {
+            background: linear-gradient(180deg, rgba(55, 202, 55, 0.05) 0%, transparent 100%);
+            padding: 120px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid var(--border-subtle);
+        }
+
+        .about-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            background: linear-gradient(180deg, transparent 60%, rgba(5, 5, 8, 0.8) 100%);
+        }
+
+        .about-content h2 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .about-tagline {
+            font-size: 20px;
+            color: var(--secondary);
+            margin-bottom: 32px;
+        }
+
+        .about-bio {
+            color: var(--gray-300);
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .about-bio p {
+            margin-bottom: 20px;
+        }
+
+        .about-philosophy {
+            background: var(--bg-card);
+            border-left: 4px solid var(--secondary);
+            padding: 24px 28px;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 32px;
+        }
+
+        .about-philosophy p {
+            font-size: 18px;
+            font-style: italic;
+            color: var(--gray-200);
+        }
+
+        .about-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .about-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            color: var(--gray-300);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .about-link:hover {
+            border-color: var(--secondary);
+            color: var(--white);
+        }
+
+        /* ============================================
+           LEAD CAPTURE / CTA SECTION
+        ============================================ */
+        .cta-section {
+            padding: 120px 0;
+            background: radial-gradient(ellipse at bottom, rgba(24, 139, 246, 0.15) 0%, transparent 60%);
+        }
+
+        .cta-dual-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            align-items: stretch;
+        }
+
+        .cta-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cta-box-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .cta-box-icon {
+            font-size: 28px;
+        }
+
+        .cta-box-header h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .cta-box-desc {
+            color: var(--gray-400);
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+
+        .calendar-embed,
+        .form-embed {
+            flex: 1;
+            min-height: 600px;
+        }
+
+        .calendar-embed iframe,
+        .form-embed iframe {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+        }
+
+        /* Calendar Footer - Full Bio Section */
+        .calendar-footer-full {
+            margin-top: 24px;
+            padding: 28px;
+            background: rgba(55, 202, 55, 0.05);
+            border: 1px solid rgba(55, 202, 55, 0.15);
+            border-radius: 16px;
+        }
+
+        .calendar-photo-large {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 16px;
+            object-fit: cover;
+            border: 3px solid rgba(55, 202, 55, 0.3);
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .calendar-footer-full h4 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .calendar-bio-tagline {
+            font-size: 14px;
+            color: var(--secondary);
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .calendar-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .timeline-section h5 {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .timeline-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline-section li {
+            font-size: 12px;
+            color: var(--gray-400);
+            margin-bottom: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .timeline-section li span {
+            font-size: 11px;
+            color: var(--gray-500);
+            font-weight: 500;
+        }
+
+        .calendar-transformation {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .transformation-stat {
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .transformation-stat .stat-number {
+            display: block;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .transformation-stat .stat-label {
+            font-size: 11px;
+            color: var(--gray-400);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .transformation-story p {
+            font-size: 13px;
+            color: var(--gray-300);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .transformation-story em {
+            color: var(--primary);
+        }
+
+        .calendar-checklist {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .calendar-checklist li {
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .calendar-timeline {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .calendar-transformation {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Legacy styles kept for compatibility */
+        .cta-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .cta-content h2 {
+            font-size: 44px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .cta-content p {
+            color: var(--gray-400);
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+
+        .cta-benefits {
+            list-style: none;
+        }
+
+        .cta-benefits li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            margin-bottom: 16px;
+            color: var(--gray-200);
+        }
+
+        .cta-benefits li svg {
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+        }
+
+        .cta-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            padding: 48px;
+        }
+
+        .cta-form h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .cta-form > p {
+            color: var(--gray-500);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--gray-300);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 15px;
+            font-family: inherit;
+            transition: all 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(24, 139, 246, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--gray-600);
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23718096' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 18px;
+            padding-right: 40px;
+        }
+
+        .form-group select option {
+            background: var(--bg-dark);
+            color: var(--white);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .form-disclaimer {
+            margin-top: 16px;
+            font-size: 12px;
+            color: var(--gray-600);
+            text-align: center;
+        }
+
+        /* ============================================
+           FOOTER
+        ============================================ */
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            border-top: 1px solid var(--border-subtle);
+            padding: 80px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand .logo {
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            color: var(--gray-500);
+            font-size: 14px;
+            margin-bottom: 20px;
+            max-width: 280px;
+        }
+
+        .footer-contact {
+            font-size: 14px;
+            color: var(--gray-400);
+        }
+
+        .footer-contact a {
+            color: var(--gray-300);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-contact a:hover {
+            color: var(--white);
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--gray-400);
+            margin-bottom: 20px;
+        }
+
+        .footer-col a {
+            display: block;
+            color: var(--gray-500);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 12px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .footer-bottom p {
+            color: var(--gray-600);
+            font-size: 13px;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-legal a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-legal a:hover {
+            color: var(--gray-400);
+        }
+
+        /* ============================================
+           ANIMATIONS
+        ============================================ */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease both;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+        ============================================ */
+        @media (max-width: 1024px) {
+            .platform-grid,
+            .about-grid,
+            .cta-wrapper,
+            .cta-dual-wrapper {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .cta-box {
+                padding: 24px;
+            }
+
+            .pricing-tiers,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .runway-timeline::before {
+                left: 20px;
+            }
+
+            .runway-item,
+            .runway-item:nth-child(odd) {
+                flex-direction: column;
+            }
+
+            .runway-content,
+            .runway-item:nth-child(odd) .runway-content {
+                width: 100%;
+                padding-left: 60px !important;
+                padding-right: 0 !important;
+                text-align: left !important;
+            }
+
+            .runway-marker {
+                left: 20px;
+            }
+
+            .runway-item:nth-child(odd) .runway-list li {
+                justify-content: flex-start;
+            }
+
+            .runway-item:nth-child(odd) .runway-list li::before {
+                order: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 80px 0;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-tabs {
+                flex-direction: column;
+            }
+
+            .pricing-tab {
+                width: 100%;
+                text-align: center;
+            }
+
+            .pricing-tiers {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-extras {
+                grid-template-columns: 1fr;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .honesty-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero-value-prop {
+                padding: 24px;
+            }
+
+            .pricing-card {
+                padding: 32px 24px;
+            }
+
+            .cta-form {
+                padding: 32px 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mock-stat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://scvleads.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://scvleads.com/og-image.png"></head>
+<body>
+
+    <!-- TRON Grid Background -->
+    <div class="tron-wrapper">
+        <div class="tron-grid"></div>
+        <div class="tron-horizon"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container">
+            <a href="#" class="logo">SCVLeads</a>
+            <nav>
+                <a href="#what">What You Get</a>
+                <a href="#platform">Platform</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Availability</a>
+                <a href="https://scvleads.com/blog">Blog</a>
+                <a href="#contact" class="nav-cta">Get Started</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Accepting New Clients</div>
+
+                <h1>AI-Powered Lead Generation<br><span>You Actually Own</span></h1>
+
+                <p class="hero-subtitle">Southern California Verified Leads — Built with 25+ years of local business expertise and cutting-edge AI technology.</p>
+
+                <div class="hero-value-prop">
+                    <h2>You Own The Account. You Pay Meta Directly. I Handle Everything Else.</h2>
+                    <p>Most lead gen agencies run ads from their account, hide your spend, and mix your budget with other clients. You never know the real cost. Not here.</p>
+
+                    <div class="value-checks">
+                        <div class="value-check">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span><strong>You own the Meta Business Manager account</strong> — see every dollar spent in real-time</span>
+                        </div>
+                        <div class="value-check">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span><strong>You pay Meta directly</strong> — I never touch your ad budget</span>
+                        </div>
+                        <div class="value-check">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span><strong>Complete campaign management</strong> — strategy, ads, targeting, CRM, SMS, everything</span>
+                        </div>
+                        <div class="value-check">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span><strong>You own your leads</strong> — delivered directly into your system, no middleman</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">
+                        Schedule Strategy Call
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Skip Calendar — Fill Out Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-header">
+                <h2>Real Results. Real Clients.</h2>
+                <p>Not vanity metrics — actual business outcomes</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-metric">5x</div>
+                <div class="testimonial-text">Return on Ad Spend for a Local Lender</div>
+                <div class="testimonial-detail">Within 90 days, a Santa Clarita mortgage professional turned their ad investment into 5x the revenue in closed loans.</div>
+                <div class="testimonial-source">Verified SCVLeads Client</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="what-you-get" id="what">
+        <div class="container">
+            <div class="section-header">
+                <h2>This Isn't a Simple Setup.<br>Here's What We Actually Build.</h2>
+                <p>The $1,500 setup fee is an investment — here's what it creates.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Campaign Architecture</h3>
+                    <p>Machine learning that gets smarter every day, optimizing your campaigns while you sleep.</p>
+                    <ul class="feature-list">
+                        <li>AI audience analysis & behavioral targeting</li>
+                        <li>Predictive lead quality scoring</li>
+                        <li>Automated A/B testing (20+ variations weekly)</li>
+                        <li>Conversion API (CAPI) integration for precise tracking</li>
+                        <li>Meta Pixel optimization</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>25+ Years of Marketing Intelligence</h3>
+                    <p>Local market knowledge you can't download from a course or buy from a guru.</p>
+                    <ul class="feature-list">
+                        <li>Santa Clarita market analysis</li>
+                        <li>Industry-specific benchmarking</li>
+                        <li>Micro-targeting based on buyer psychology</li>
+                        <li>Monthly competitive intelligence reports</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>ROI Protection Strategy</h3>
+                    <p>Every dollar tracked. Every lead graded. Every decision backed by data.</p>
+                    <ul class="feature-list">
+                        <li>Cost per lead baseline (Month 1)</li>
+                        <li>Monthly CPL reduction targets (3-5%)</li>
+                        <li>Lead quality grading (hot/warm/cold)</li>
+                        <li>Return on Ad Spend tracking</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>HonorElevate Platform Access</h3>
+                    <p>Your command center for leads, campaigns, and team performance — on any device.</p>
+                    <ul class="feature-list">
+                        <li>Real-time dashboard (desktop, tablet, mobile)</li>
+                        <li>iOS & Android apps for your team</li>
+                        <li>Instant lead notifications</li>
+                        <li>Live campaign metrics</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Full CRM + SMS Automation</h3>
+                    <p>Leads captured, nurtured, and followed up — automatically.</p>
+                    <ul class="feature-list">
+                        <li>Enterprise CRM integration</li>
+                        <li>A2P SMS with local SCV phone number</li>
+                        <li>60-minute automated follow-up sequences</li>
+                        <li>Lead scoring & pipeline management</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Continuous Optimization</h3>
+                    <p>Set it and forget it? Never. We optimize weekly, not yearly.</p>
+                    <ul class="feature-list">
+                        <li>Weekly campaign performance reviews</li>
+                        <li>Audience expansion/contraction</li>
+                        <li>Seasonal adjustment strategies</li>
+                        <li>Competitor monitoring & counter-strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HonorElevate Platform Section -->
+    <section class="platform-section" id="platform">
+        <div class="container">
+            <div class="platform-grid">
+                <div class="platform-content">
+                    <h2>Your Team's Command Center:<br><span>HonorElevate</span></h2>
+                    <p>Every lead, every metric, every team member — connected in real-time across all devices. No more missed opportunities.</p>
+
+                    <div class="platform-features">
+                        <div class="platform-feature">
+                            <div class="platform-feature-icon">🔄</div>
+                            <div>
+                                <h4>Round-Robin Lead Distribution</h4>
+                                <p>Automatically route leads to available team members. Fair distribution, faster response times.</p>
+                            </div>
+                        </div>
+
+                        <div class="platform-feature">
+                            <div class="platform-feature-icon">👥</div>
+                            <div>
+                                <h4>Multi-User Team Accounts</h4>
+                                <p>Every employee gets their own login. Track individual performance, manage permissions, scale your team.</p>
+                            </div>
+                        </div>
+
+                        <div class="platform-feature">
+                            <div class="platform-feature-icon">🔔</div>
+                            <div>
+                                <h4>Instant Push Notifications</h4>
+                                <p>New lead? Your team knows immediately. Desktop alerts, mobile push, SMS — pick your poison.</p>
+                            </div>
+                        </div>
+
+                        <div class="platform-feature">
+                            <div class="platform-feature-icon">📈</div>
+                            <div>
+                                <h4>Performance Dashboards</h4>
+                                <p>See who's closing, who's calling, and where leads are stuck. Data-driven team management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platform-visual">
+                    <div class="device-mockup">
+                        <div class="mock-header">
+                            <div class="mock-dot"></div>
+                            <div class="mock-dot"></div>
+                            <div class="mock-dot"></div>
+                        </div>
+                        <div class="mock-content">
+                            <div class="mock-stat-grid">
+                                <div class="mock-stat">
+                                    <div class="mock-stat-value">47</div>
+                                    <div class="mock-stat-label">New Leads</div>
+                                </div>
+                                <div class="mock-stat">
+                                    <div class="mock-stat-value">$12</div>
+                                    <div class="mock-stat-label">Avg CPL</div>
+                                </div>
+                                <div class="mock-stat">
+                                    <div class="mock-stat-value">23%</div>
+                                    <div class="mock-stat-label">Conversion</div>
+                                </div>
+                            </div>
+                            <div class="mock-leads">
+                                <div class="mock-lead-item">
+                                    <span class="mock-lead-name">Mike R. — HVAC Install</span>
+                                    <span class="mock-lead-status new">New</span>
+                                </div>
+                                <div class="mock-lead-item">
+                                    <span class="mock-lead-name">Sarah T. — AC Repair</span>
+                                    <span class="mock-lead-status">Contacted</span>
+                                </div>
+                                <div class="mock-lead-item">
+                                    <span class="mock-lead-name">James L. — Furnace Quote</span>
+                                    <span class="mock-lead-status">Qualified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="devices-badge">
+                        <span>📱💻🖥️</span>
+                        <p><strong>Available everywhere:</strong> iOS App, Android App, Desktop, Tablet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Features Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for Teams, Not Just Owners</h2>
+                <p>Whether you're solo or have 50 employees, the system scales with you.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-icon">🎯</div>
+                    <h3>Assign Leads Your Way</h3>
+                    <p>Round-robin for fairness, specific assignment for specialists, or broadcast to everyone. Your rules.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card-icon">⚡</div>
+                    <h3>Speed to Lead</h3>
+                    <p>Studies show responding in under 5 minutes increases conversions 100x. We make that possible.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-card-icon">📊</div>
+                    <h3>Track Everything</h3>
+                    <p>Who called, who closed, who's slacking. Full visibility into your team's lead handling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Digital Marketing Done Right</h2>
+                <p>We build your whole system. You get the results. Pick your industry below.</p>
+            </div>
+
+            <!-- Key Value Props -->
+            <div class="pricing-badges">
+                <span class="pricing-badge">✓ Month-to-Month</span>
+                <span class="pricing-badge">✓ No Contracts</span>
+                <span class="pricing-badge">✓ Cancel Anytime</span>
+                <span class="pricing-badge">✓ 90-Day Guarantee</span>
+            </div>
+
+            <!-- Industry Tabs -->
+            <div class="pricing-tabs">
+                <button class="pricing-tab active" data-tab="service">🔧 Service Businesses</button>
+                <button class="pricing-tab" data-tab="realestate">🏠 Real Estate & Mortgage</button>
+                <button class="pricing-tab" data-tab="inspectors">🔍 Inspectors & Pest</button>
+                <button class="pricing-tab" data-tab="beauty">💅 Beauty & Wellness</button>
+                <button class="pricing-tab" data-tab="restaurants">🍽️ Restaurants & Venues</button>
+            </div>
+
+            <!-- Tab Content: Service Businesses -->
+            <div class="pricing-tab-content active" id="tab-service">
+                <div class="pricing-tiers">
+                    <div class="pricing-card">
+                        <div class="pricing-tier-name">Essentials</div>
+                        <div class="pricing-amount">$697<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 2 extra jobs</div>
+                        <p class="pricing-perfect">HVAC, Plumbing, Electrical, Roofing</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Website optimization</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Business Profile</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Local Service Ads setup</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lead capture + AI text-back</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>CRM with job tracking</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-tier-name">Accelerator</div>
+                        <div class="pricing-amount">$1,297<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 3-4 extra jobs</div>
+                        <p class="pricing-perfect">Growing contractors ready to scale</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Essentials</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Facebook & Google Ads</strong></li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Content creation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Reputation automation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Video testimonials</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Bi-weekly strategy calls</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary pricing-cta">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Real Estate & Mortgage -->
+            <div class="pricing-tab-content" id="tab-realestate">
+                <div class="pricing-tiers">
+                    <div class="pricing-card">
+                        <div class="pricing-tier-name">Mortgage Broker Growth</div>
+                        <div class="pricing-amount">$1,997<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 1 funded mortgage</div>
+                        <p class="pricing-perfect">Loan officers & mortgage brokers</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Website redesign</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lead capture funnels</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Reputation management</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Paid ads management</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Email nurture sequences</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>AI call handler</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Monthly strategy calls</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-tier-name">Real Estate Brokerage Premium</div>
+                        <div class="pricing-amount">$2,497<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 1 extra deal</div>
+                        <p class="pricing-perfect">Agents & brokerages ready to dominate</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Custom website</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Content & video strategy</strong></li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Facebook & Google Ads</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lead nurture sequences</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lead distribution automation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Listing campaigns</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Quarterly strategy sessions</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary pricing-cta">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Inspectors & Pest -->
+            <div class="pricing-tab-content" id="tab-inspectors">
+                <div class="pricing-tiers">
+                    <div class="pricing-card">
+                        <div class="pricing-tier-name">Home Inspector Premium</div>
+                        <div class="pricing-amount">$897<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 3-4 inspections</div>
+                        <p class="pricing-perfect">Home inspectors building referral networks</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Portfolio website</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Agent referral sequences</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Review automation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SMS confirmations</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Inspector calendar CRM</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-tier-name">Pest Control Growth</div>
+                        <div class="pricing-amount">$797<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 8-10 new services</div>
+                        <p class="pricing-perfect">Pest control building recurring revenue</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Service area pages</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Business Profile</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Lead capture</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Treatment reminders</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Customer retention sequences</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-tier-name">Pest Control Accelerator</div>
+                        <div class="pricing-amount">$1,197<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 12-15 new services</div>
+                        <p class="pricing-perfect">Scaling pest control operations</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Growth</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Paid ads management</strong></li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Before/after content</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Reputation management</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Referral automation</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary pricing-cta">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Beauty & Wellness -->
+            <div class="pricing-tab-content" id="tab-beauty">
+                <div class="pricing-tiers">
+                    <div class="pricing-card">
+                        <div class="pricing-tier-name">Beauty & Wellness Starter</div>
+                        <div class="pricing-amount">$497<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 10 extra bookings</div>
+                        <p class="pricing-perfect">Salons, spas, med spas, wellness centers</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Website with booking</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google Business Profile</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Social media management</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Review automation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SMS appointment reminders</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Email campaigns</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-secondary pricing-cta">Get Started</a>
+                    </div>
+
+                    <div class="pricing-card featured">
+                        <div class="pricing-tier-name">Beauty & Wellness Pro</div>
+                        <div class="pricing-amount">$897<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 15 extra bookings</div>
+                        <p class="pricing-perfect">Growing beauty brands ready to scale</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Everything in Starter</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Ad management</strong></li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Promotional automation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Content strategy</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Community management</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Loyalty campaigns</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary pricing-cta">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Restaurants & Venues -->
+            <div class="pricing-tab-content" id="tab-restaurants">
+                <div class="pricing-tiers pricing-tiers-single">
+                    <div class="pricing-card featured">
+                        <div class="pricing-tier-name">Restaurant Growth</div>
+                        <div class="pricing-amount">$1,197<span>/mo</span></div>
+                        <div class="pricing-breakeven">💰 Break-even: 20 extra covers</div>
+                        <p class="pricing-perfect">Restaurants, bars, event venues</p>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Website with reservations</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Social content calendar</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><strong>Google Ads</strong></li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Review generation</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Email/SMS campaigns</li>
+                            <li><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Event promotion</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary pricing-cta">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Expansion & Guarantee -->
+            <div class="pricing-extras">
+                <div class="pricing-extra-card">
+                    <h4>👥 Team Expansion</h4>
+                    <p>Add team members to your HonorElevate dashboard:</p>
+                    <ul>
+                        <li><strong>1-2 users:</strong> $99/person/month</li>
+                        <li><strong>3-5 users:</strong> $79/person/month</li>
+                        <li><strong>6+ users:</strong> Custom bulk pricing</li>
+                    </ul>
+                </div>
+                <div class="pricing-extra-card guarantee">
+                    <h4>🛡️ 90-Day Performance Guarantee</h4>
+                    <p>We guarantee 25-50% improvement in your key metrics (leads, calls, bookings, revenue) within 90 days — <strong>or we keep optimizing at no extra charge</strong> until we hit your targets.</p>
+                </div>
+            </div>
+
+            <!-- Ad Spend Note -->
+            <div class="ad-spend-note">
+                <p><strong>About Ad Spend:</strong> Monthly management covers strategy, optimization, CRM, SMS, and dashboard. You pay Meta, Google, LinkedIn, or TikTok directly — we never touch your ad budget. <strong>Recommended: $1,000-$2,500/month</strong> depending on industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 90-Day Runway Section -->
+    <section class="runway-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your 90-Day Runway to ROI</h2>
+                <p>Here's exactly what happens after you sign up.</p>
+            </div>
+
+            <div class="runway-timeline">
+                <div class="runway-item">
+                    <div class="runway-marker"></div>
+                    <div class="runway-content">
+                        <div class="runway-month">Month 1</div>
+                        <div class="runway-title">Build & Test</div>
+                        <ul class="runway-list">
+                            <li>Custom campaign architecture built</li>
+                            <li>3-5 ad variations live</li>
+                            <li>Lead flow begins</li>
+                            <li>First 20-30 qualified leads</li>
+                            <li>HonorElevate dashboard live</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="runway-item">
+                    <div class="runway-marker"></div>
+                    <div class="runway-content">
+                        <div class="runway-month">Month 2</div>
+                        <div class="runway-title">Data & Optimization</div>
+                        <ul class="runway-list">
+                            <li>50+ qualified leads generated</li>
+                            <li>Real appointments being booked</li>
+                            <li>Cost per lead optimization kicks in</li>
+                            <li>First ROI conversations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="runway-item">
+                    <div class="runway-marker"></div>
+                    <div class="runway-content">
+                        <div class="runway-month">Month 3</div>
+                        <div class="runway-title">Decision Time</div>
+                        <ul class="runway-list">
+                            <li>100+ leads generated</li>
+                            <li>Clear ROI metrics established</li>
+                            <li>Real deals closed</li>
+                            <li>Discuss scaling & custom agreements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="runway-item">
+                    <div class="runway-marker"></div>
+                    <div class="runway-content">
+                        <div class="runway-month">Month 4+</div>
+                        <div class="runway-title">Growth & Scale</div>
+                        <ul class="runway-list">
+                            <li>Transition to custom pricing</li>
+                            <li>Add optional services</li>
+                            <li>Expand to additional locations</li>
+                            <li>Percentage-of-revenue deals available</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="runway-item">
+                    <div class="runway-marker"></div>
+                    <div class="runway-content">
+                        <div class="runway-month">Month 5-6</div>
+                        <div class="runway-title">Market Expansion</div>
+                        <ul class="runway-list">
+                            <li>Expand beyond Meta to Google LSA</li>
+                            <li>YouTube local prospecting</li>
+                            <li>Full funnel integration</li>
+                            <li>Omnichannel market dominance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions You're Probably Asking</h2>
+                <p>Straight answers. No fluff.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">What if I already have an agency?</div>
+                    <div class="faq-answer">Ask them one question: "Can I log into the ad account and see everything?" If the answer is no or complicated, you're flying blind. We give you full access from day one.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the contract length?</div>
+                    <div class="faq-answer">Month-to-month after the initial 90-day runway. We earn your business every month. If we're not delivering, you leave. Simple.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How quickly will I see leads?</div>
+                    <div class="faq-answer">Most clients see their first leads within 7-14 days of campaign launch. Quality leads that convert? That's what Month 2-3 is for — optimization.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to be tech-savvy?</div>
+                    <div class="faq-answer">Nope. If you can use a smartphone, you can use HonorElevate. We handle all the technical setup. You just respond to leads.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What industries do you work with?</div>
+                    <div class="faq-answer">Home services (HVAC, plumbing, electrical, roofing), dental practices, real estate agents, mortgage professionals. If you need local leads, we can probably help.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the $1,500 setup fee for?</div>
+                    <div class="faq-answer">Building your custom campaign architecture, integrating your CRM, setting up tracking pixels/CAPI, creating initial ad creative, and configuring your HonorElevate platform. It's real work.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can my whole team access the system?</div>
+                    <div class="faq-answer">Yes. Every employee can have their own login with the HonorElevate app (iOS, Android, desktop). Round-robin leads, individual notifications, performance tracking — all built in.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What if this isn't right for me?</div>
+                    <div class="faq-answer">We'll tell you on the strategy call. If you're not ready, don't have the ad budget, or we're not a fit — we say so. No hard sell. Ever.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honesty Section -->
+    <section class="honesty-section">
+        <div class="container">
+            <div class="honesty-grid">
+                <div class="honesty-content">
+                    <h2>Real Talk: This Isn't for Everyone</h2>
+                    <p>Lead generation works. But it's not magic, and it's not right for every business at every stage.</p>
+
+                    <ul class="honesty-list">
+                        <li>
+                            <span>🚫</span>
+                            <div>
+                                <strong>Not ready if...</strong>
+                                <p>You can't handle more leads right now. More leads with bad follow-up = wasted money.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>🚫</span>
+                            <div>
+                                <strong>Not a fit if...</strong>
+                                <p>You want "set it and forget it." This is a partnership. We optimize, you close.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span>✅</span>
+                            <div>
+                                <strong>Perfect if...</strong>
+                                <p>You have capacity, want transparency, and are ready to invest in growth.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="honesty-cta">
+                    <h3>Know This Is What You Need?</h3>
+                    <p>Skip the calendar. Tell us about your business and we'll reach out within 24 hours.</p>
+                    <a href="#contact" class="btn btn-primary">Fill Out Form & Skip the Line</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Connor Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://storage.googleapis.com/msgsndr/QkqUOCzLKFfXMsxZTXOY/media/connor-macivor.jpg" alt="Connor MacIvor - AI Growth Architect" onerror="this.src='https://via.placeholder.com/300x400?text=Connor+MacIvor'">
+                </div>
+
+                <div class="about-content">
+                    <h2>Meet Connor MacIvor</h2>
+                    <p class="about-tagline">AI Growth Architect — 25+ Years Santa Clarita. 20 Years LAPD. All In on AI.</p>
+
+                    <div class="about-bio">
+                        <p>I'm not your typical lead generation guy. I spent 25 years building businesses in Santa Clarita — real estate, services, you name it. I spent 20 years with the LAPD as a Motor Officer, which taught me systems thinking, strategy, and how to vet people.</p>
+
+                        <p>Now I'm combining that real-world expertise with cutting-edge AI to build lead generation systems that actually work. I'm not chasing trends. I'm building intelligent infrastructure that scales.</p>
+                    </div>
+
+                    <div class="about-philosophy">
+                        <p>"Transparency over tactics. Long-term partnerships over quick wins. Results over promises."</p>
+                    </div>
+
+                    <div class="about-links">
+                        <a href="https://SantaClaritaArtificialIntelligence.com" target="_blank" class="about-link">
+                            🤖 SantaClaritaAI.com
+                        </a>
+                        <a href="https://HonorElevate.com" target="_blank" class="about-link">
+                            📊 HonorElevate.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture / CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header" style="margin-bottom: 48px;">
+                <h2>Ready to See If We're a Fit?</h2>
+                <p>Book a strategy call or fill out the form — your choice. Either way, we'll discuss your goals and see if AI-powered lead generation makes sense for your business.</p>
+            </div>
+
+            <!-- Two-Column Layout: Calendar + Form -->
+            <div class="cta-dual-wrapper">
+                <!-- Left: Calendar -->
+                <div class="cta-box">
+                    <div class="cta-box-header">
+                        <span class="cta-box-icon">📅</span>
+                        <h3>Book a Strategy Call</h3>
+                    </div>
+                    <p class="cta-box-desc">Pick a time that works. 20 minutes, no pitch.</p>
+
+                    <!-- HonorElevate Calendar Embed -->
+                    <div class="calendar-embed">
+                        <iframe src="https://api.honorelevate.com/widget/booking/VUMza8cYIwNzNeXxRqNl" style="width: 100%; min-height: 600px; border: none; overflow: hidden; border-radius: 12px;" scrolling="no" id="VUMza8cYIwNzNeXxRqNl_1769630095841"></iframe>
+                    </div>
+
+                    <!-- Who You'll Talk To - Full Bio -->
+                    <div class="calendar-footer-full">
+                        <img src="https://storage.googleapis.com/msgsndr/QkqUOCzLKFfXMsxZTXOY/media/6951a59c73a5e080197a716f.png" alt="Connor MacIvor" class="calendar-photo-large">
+
+                        <h4>You'll Be Talking to Connor MacIvor</h4>
+                        <p class="calendar-bio-tagline">AI Growth Architect • 35+ Years of Grit • Santa Clarita Since '98</p>
+
+                        <div class="calendar-timeline">
+                            <div class="timeline-section">
+                                <h5>🚔 Law Enforcement</h5>
+                                <ul>
+                                    <li><span>1987-1989</span> Roosevelt County Sheriff's Dept</li>
+                                    <li><span>1989-1990</span> Otero County Sheriff's Dept</li>
+                                    <li><span>1990-2010</span> LAPD (20 years)</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-section">
+                                <h5>🏠 Real Estate</h5>
+                                <ul>
+                                    <li><span>1998-2021</span> RE/MAX International</li>
+                                    <li><span>2021-2022</span> eXp & Compass</li>
+                                    <li><span>2022-2026</span> Realty One Group</li>
+                                    <li><span>2026-Now</span> SYNC Brokerage</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-section">
+                                <h5>🤖 AI & Tech</h5>
+                                <ul>
+                                    <li><span>2021-Now</span> AI Growth Architect & Consultant</li>
+                                    <li><span>2022</span> Built HonorElevate concept</li>
+                                    <li><span>Mar 2023</span> HonorElevate launched</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="calendar-transformation">
+                            <div class="transformation-stat">
+                                <span class="stat-number">-135</span>
+                                <span class="stat-label">lbs in 7.5 months</span>
+                            </div>
+                            <div class="transformation-story">
+                                <p><strong>2021:</strong> 365 lbs, 65" waist → <strong>230 lbs, 33" waist.</strong> Fasting + lifting. Haven't missed a workout in 4 years. Fat kid, fat adolescent, finally torched it for good. Still building muscle. <em>The saga continues.</em></p>
+                            </div>
+                        </div>
+
+                        <ul class="calendar-checklist">
+                            <li>✓ No contracts after 90 days</li>
+                            <li>✓ You own the ad account</li>
+                            <li>✓ We'll tell you if it's not a fit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="cta-box">
+                    <div class="cta-box-header">
+                        <span class="cta-box-icon">⚡</span>
+                        <h3>Skip the Line</h3>
+                    </div>
+                    <p class="cta-box-desc">Fill this out and we'll reach out within 24 hours.</p>
+
+                    <!-- HonorElevate Form Embed -->
+                    <div class="form-embed">
+                        <iframe
+                            src="https://api.honorelevate.com/widget/form/NqvtHv2lJpzoZIUykKFA"
+                            style="width: 100%; min-height: 600px; border: none; border-radius: 12px;"
+                            id="inline-NqvtHv2lJpzoZIUykKFA"
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="001 New SCVleads"
+                            data-height="600"
+                            data-layout-iframe-id="inline-NqvtHv2lJpzoZIUykKFA"
+                            data-form-id="NqvtHv2lJpzoZIUykKFA"
+                            title="001 New SCVleads"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SCVLeads</a>
+                    <p>AI-powered lead generation for Southern California service businesses. Transparent. Effective. Yours.</p>
+                    <div class="footer-contact">
+                        <a href="tel:661-362-8228">📞 661-362-8228</a>
+                        <a href="mailto:connor@scvleads.com">✉️ connor@scvleads.com</a>
+                        <p>Santa Clarita, California</p>
+                        <p>Mon-Fri, 9 AM - 5 PM PT</p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#what">What You Get</a>
+                    <a href="#platform">Platform</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Availability</a>
+                    <a href="https://scvleads.com/blog">Blog</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Industries</h4>
+                    <a href="#pricing">HVAC</a>
+                    <a href="#pricing">Plumbing</a>
+                    <a href="#pricing">Electrical</a>
+                    <a href="#pricing">Roofing</a>
+                    <a href="#pricing">Dental</a>
+                    <a href="#pricing">Real Estate</a>
+                    <a href="#pricing">Mortgage</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="https://SantaClaritaArtificialIntelligence.com" target="_blank">AI Education</a>
+                    <a href="https://SantaClaritaAI.com" target="_blank">Santa Clarita AI</a>
+                    <a href="https://HonorElevate.com" target="_blank">HonorElevate Platform</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 SCVLeads.com | Southern California Verified Leads | AI Growth Architect: Connor MacIvor</p>
+                <div class="footer-legal">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "SCVLeads - Southern California Verified Leads",
+        "description": "AI-powered lead generation for Southern California service businesses. Transparent pricing, real results.",
+        "url": "https://scvleads.com",
+        "telephone": "+1-661-362-8228",
+        "email": "connor@scvleads.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Clarita",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Connor MacIvor",
+            "jobTitle": "AI Growth Architect"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "priceRange": "$497 - $2497/month"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI-Powered Lead Generation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "SCVLeads"
+        },
+        "description": "Full-service AI lead generation including campaign management, CRM integration, SMS automation, and real-time dashboard access.",
+        "areaServed": {
+            "@type": "Place",
+            "name": "Southern California"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Lead Generation Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Starter Package"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "497-897",
+                        "priceCurrency": "USD",
+                        "unitText": "MONTH"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Professional Package"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "697-1297",
+                        "priceCurrency": "USD",
+                        "unitText": "MONTH"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Elite Package"
+                    },
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "1497-2497",
+                        "priceCurrency": "USD",
+                        "unitText": "MONTH"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What if I already have a lead generation agency?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ask them one question: Can I log into the ad account and see everything? If the answer is no or complicated, you're flying blind. We give you full access from day one."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the contract length?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Month-to-month after the initial 90-day runway. We earn your business every month."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How quickly will I see leads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most clients see their first leads within 7-14 days of campaign launch. Quality leads that convert? That's what Month 2-3 is for — optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can my whole team access the system?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Every employee can have their own login with the HonorElevate app (iOS, Android, desktop). Round-robin leads, individual notifications, performance tracking — all built in."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+            nav.style.position = 'absolute';
+            nav.style.top = '100%';
+            nav.style.left = '0';
+            nav.style.right = '0';
+            nav.style.background = 'rgba(5, 5, 8, 0.98)';
+            nav.style.flexDirection = 'column';
+            nav.style.padding = '24px';
+            nav.style.gap = '16px';
+            nav.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(5, 5, 8, 0.98)';
+            } else {
+                header.style.background = 'rgba(5, 5, 8, 0.9)';
+            }
+        });
+
+        // Pricing Tabs
+        document.querySelectorAll('.pricing-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active from all tabs
+                document.querySelectorAll('.pricing-tab').forEach(t => t.classList.remove('active'));
+                // Remove active from all content
+                document.querySelectorAll('.pricing-tab-content').forEach(c => c.classList.remove('active'));
+
+                // Add active to clicked tab
+                this.classList.add('active');
+
+                // Show corresponding content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+    </script>
+
+    <!-- HonorElevate Form/Calendar Embed Script -->
+    <script src="https://api.honorelevate.com/js/form_embed.js" type="text/javascript"></script>
+
+</body>
+</html>
